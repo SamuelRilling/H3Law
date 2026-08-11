@@ -44,7 +44,7 @@ export function ContactSection({
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         {showHeading && (
           <div className="mb-14 text-center">
-            <span className="mb-3 inline-block text-xs font-medium uppercase tracking-[0.3em] text-muted-foreground">
+            <span className="mb-3 inline-block text-xs font-medium uppercase tracking-[0.3em] text-accent">
               Hablemos
             </span>
             <h2 className="font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl">
