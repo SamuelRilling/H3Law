@@ -17,7 +17,7 @@ export function PageHeader({
           {title}
         </h1>
         {description && (
-          <p className="mx-auto mt-5 max-w-xl text-balance text-base leading-relaxed text-foreground/70">
+          <p className="mx-auto mt-5 max-w-xl text-balance text-lg leading-relaxed text-foreground/70">
             {description}
           </p>
         )}

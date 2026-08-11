@@ -38,7 +38,7 @@ export function ServicesSection() {
                 className="flex items-baseline gap-4 border-t border-border py-3 first:border-t-0"
               >
                 <span className="font-serif text-sm text-accent">{String(index + 1).padStart(2, '0')}</span>
-                <span className="text-[15px] leading-relaxed text-foreground/85">{title}</span>
+                <span className="text-lg leading-relaxed text-foreground/85">{title}</span>
               </li>
             ))}
           </ol>

@@ -59,7 +59,7 @@ export function ContactSection({
               <span className="flex h-11 w-11 flex-none items-center justify-center rounded-full bg-secondary text-foreground">
                 <MapPin className="h-5 w-5" strokeWidth={1.75} />
               </span>
-              <p className="pt-2 text-[15px] leading-relaxed text-foreground/80">
+              <p className="pt-2 text-lg leading-relaxed text-foreground/80">
                 Antonio Varas 687, Oficina 509,
                 <br />
                 Torre Sinergia, Temuco, Chile
@@ -72,7 +72,7 @@ export function ContactSection({
               </span>
               <a
                 href="tel:+56982719372"
-                className="pt-2 text-[15px] leading-relaxed text-foreground/80 transition-colors hover:text-accent"
+                className="pt-2 text-lg leading-relaxed text-foreground/80 transition-colors hover:text-accent"
               >
                 +56 9 8271 9372
               </a>
@@ -84,7 +84,7 @@ export function ContactSection({
               </span>
               <a
                 href="mailto:annerillingminte@gmail.com"
-                className="pt-2 text-[15px] leading-relaxed text-foreground/80 transition-colors hover:text-accent"
+                className="pt-2 text-lg leading-relaxed text-foreground/80 transition-colors hover:text-accent"
               >
                 annerillingminte@gmail.com
               </a>

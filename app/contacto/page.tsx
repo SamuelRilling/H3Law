@@ -14,13 +14,15 @@ export default function ContactoPage() {
   return (
     <main>
       <SiteHeader />
-      <PageHeader
-        eyebrow="Hablemos"
-        title="Contáctanos"
-        description="Escríbenos y te contactaremos a la brevedad para conversar sobre tu derecho de aguas."
-      />
-      <ContactSection includeApellido showHeading={false} />
-      <SiteFooter />
+      <div className="bg-page-wash">
+        <PageHeader
+          eyebrow="Hablemos"
+          title="Contáctanos"
+          description="Escríbenos y te contactaremos a la brevedad para conversar sobre tu derecho de aguas."
+        />
+        <ContactSection includeApellido showHeading={false} />
+        <SiteFooter />
+      </div>
     </main>
   )
 }

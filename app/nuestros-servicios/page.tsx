@@ -56,37 +56,39 @@ export default function ServiciosPage() {
   return (
     <main>
       <SiteHeader />
-      <PageHeader
-        eyebrow="Lo que hacemos"
-        title="Nuestros Servicios"
-        description="Asesoría legal integral en derecho de aguas, desde la solicitud de nuevos derechos hasta la defensa ante la Dirección General de Aguas."
-      />
+      <div className="bg-page-wash">
+        <PageHeader
+          eyebrow="Lo que hacemos"
+          title="Nuestros Servicios"
+          description="Asesoría legal integral en derecho de aguas, desde la solicitud de nuevos derechos hasta la defensa ante la Dirección General de Aguas."
+        />
 
-      <section className="on-dark py-20">
-        <div className="mx-auto max-w-4xl px-6 md:px-10">
-          {SERVICES.map(({ title, description }, index) => (
-            <div
-              key={title}
-              className="grid gap-3 border-t border-border py-10 first:border-t-0 first:pt-0 md:grid-cols-[auto_1fr] md:gap-10"
-            >
-              <span className="font-serif text-3xl font-medium leading-none text-accent">
-                {String(index + 1).padStart(2, '0')}
-              </span>
-              <div>
-                <h2 className="font-serif text-xl font-medium tracking-tight text-accent">
-                  {title}
-                </h2>
-                <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-foreground/75">
-                  {description}
-                </p>
+        <section className="py-20">
+          <div className="mx-auto max-w-4xl px-6 md:px-10">
+            {SERVICES.map(({ title, description }, index) => (
+              <div
+                key={title}
+                className="grid gap-3 border-t border-border py-10 first:border-t-0 first:pt-0 md:grid-cols-[auto_1fr] md:gap-10"
+              >
+                <span className="font-serif text-3xl font-medium leading-none text-accent">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <div>
+                  <h2 className="font-serif text-xl font-medium tracking-tight text-accent">
+                    {title}
+                  </h2>
+                  <p className="mt-3 max-w-2xl text-lg leading-relaxed text-foreground/75">
+                    {description}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
+            ))}
+          </div>
+        </section>
 
-      <ContactSection />
-      <SiteFooter />
+        <ContactSection />
+        <SiteFooter />
+      </div>
     </main>
   )
 }

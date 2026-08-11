@@ -10,10 +10,12 @@ export default function Page() {
     <main>
       <SiteHeader />
       <HeroSection />
-      <ServicesSection />
-      <AboutSection />
-      <ContactSection />
-      <SiteFooter />
+      <div className="bg-page-wash">
+        <ServicesSection />
+        <AboutSection />
+        <ContactSection />
+        <SiteFooter />
+      </div>
     </main>
   )
 }

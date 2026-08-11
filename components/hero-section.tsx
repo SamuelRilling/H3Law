@@ -27,7 +27,7 @@ export function HeroSection() {
           </h1>
         </div>
         <div className="flex flex-col gap-6 border-t border-white/30 pt-6 md:border-t-0 md:border-l md:pl-10 md:pt-0">
-          <p className="text-balance text-base leading-relaxed text-white/85">
+          <p className="text-balance text-lg leading-relaxed text-white/85">
             Asesoría legal especializada en derechos de aprovechamiento de aguas para personas,
             comunidades y empresas en el sur de Chile.
           </p>

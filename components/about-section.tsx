@@ -11,7 +11,7 @@ export function AboutSection() {
         <h2 className="font-serif text-4xl font-medium tracking-tight text-accent sm:text-5xl">
           Nosotros
         </h2>
-        <p className="mx-auto mt-6 text-balance text-base leading-relaxed text-foreground/75">
+        <p className="mx-auto mt-6 text-balance text-lg leading-relaxed text-foreground/75">
           Somos un equipo jurídico establecido en la Región de la Araucanía, especializado en el
           Derecho de Aguas tanto en La Araucanía como en las regiones de Los Ríos y Los Lagos.
         </p>
