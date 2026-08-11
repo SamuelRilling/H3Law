@@ -1,27 +1,13 @@
 'use client'
 
-import { useActionState } from 'react'
-import { useFormStatus } from 'react-dom'
+import { useState } from 'react'
 import { Mail, MapPin, Phone } from 'lucide-react'
-import { submitContactForm, type ContactFormState } from '@/app/contacto/actions'
+import { validateContactForm, type ContactFormState } from '@/lib/contact-form'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 
 const INITIAL_STATE: ContactFormState = { status: 'idle' }
-
-function SubmitButton() {
-  const { pending } = useFormStatus()
-  return (
-    <button
-      type="submit"
-      disabled={pending}
-      className="mt-2 inline-flex w-fit items-center justify-center rounded-sm bg-primary px-8 py-3 text-sm font-semibold tracking-wide text-primary-foreground transition-colors hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-60"
-    >
-      {pending ? 'Enviando…' : 'Enviar'}
-    </button>
-  )
-}
 
 function LinkedinIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -46,7 +32,12 @@ export function ContactSection({
   includeApellido?: boolean
   showHeading?: boolean
 }) {
-  const [state, formAction] = useActionState(submitContactForm, INITIAL_STATE)
+  const [state, setState] = useState<ContactFormState>(INITIAL_STATE)
+
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    setState(validateContactForm(new FormData(event.currentTarget)))
+  }
 
   return (
     <section className="bg-background py-24">
@@ -121,7 +112,7 @@ export function ContactSection({
             </div>
           </div>
 
-          <form action={formAction} className="flex flex-col gap-5" noValidate>
+          <form onSubmit={handleSubmit} className="flex flex-col gap-5" noValidate>
             <div className="flex flex-col gap-2">
               <Label htmlFor="nombre">Nombre</Label>
               <Input
@@ -185,7 +176,12 @@ export function ContactSection({
                 </p>
               )}
             </div>
-            <SubmitButton />
+            <button
+              type="submit"
+              className="mt-2 inline-flex w-fit items-center justify-center rounded-sm bg-primary px-8 py-3 text-sm font-semibold tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              Enviar
+            </button>
             <div role="status" aria-live="polite">
               {state.status === 'success' && (
                 <p className="text-sm text-primary">{state.message}</p>
