@@ -32,14 +32,14 @@ export default function NosotrosPage() {
           description="Somos un equipo jurídico establecido en la Región de la Araucanía, especializado en el Derecho de Aguas tanto en La Araucanía como en las regiones de Los Ríos y Los Lagos."
         />
 
-        <section className="py-20">
+        <section className="on-dark py-20">
           <div className="mx-auto max-w-3xl px-6 md:px-10">
             {TEAM.map((member, index) => (
               <div
                 key={member.name}
                 className="group flex items-baseline justify-between gap-6 border-t border-border py-8 transition-colors first:border-t-0 hover:border-accent"
               >
-                <h2 className="font-serif text-2xl font-medium tracking-tight text-foreground transition-colors group-hover:text-primary sm:text-3xl">
+                <h2 className="font-serif text-2xl font-medium tracking-tight text-foreground transition-colors group-hover:text-accent sm:text-3xl">
                   {member.name}
                 </h2>
                 <p className="flex-none text-xs font-medium uppercase tracking-[0.25em] text-accent">

@@ -52,20 +52,20 @@
 :root {
   color-scheme: light;
   --background: oklch(0.99 0.005 217);
-  --foreground: oklch(0.26 0.045 240);
+  --foreground: oklch(0.32 0.006 240);
   --card: oklch(0.995 0.004 217);
-  --card-foreground: oklch(0.26 0.045 240);
+  --card-foreground: oklch(0.32 0.006 240);
   --popover: oklch(0.995 0.004 217);
-  --popover-foreground: oklch(0.26 0.045 240);
+  --popover-foreground: oklch(0.32 0.006 240);
   --primary: oklch(0.32 0.085 217);
   --primary-foreground: oklch(0.98 0.006 217);
   --land: oklch(0.62 0.06 55);
   --land-foreground: oklch(0.2 0.03 55);
   --secondary: oklch(0.94 0.012 217);
-  --secondary-foreground: oklch(0.26 0.045 240);
+  --secondary-foreground: oklch(0.32 0.006 240);
   --muted: oklch(0.96 0.007 217);
-  --muted-foreground: oklch(0.5 0.03 217);
-  --accent: oklch(0.68 0.135 217);
+  --muted-foreground: oklch(0.5 0.006 240);
+  --accent: oklch(0.62 0.1 190);
   --accent-foreground: oklch(0.98 0.006 217);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.89 0.014 217);
@@ -176,19 +176,19 @@
   .bg-page-wash {
     background-image: linear-gradient(
       to bottom,
-      var(--background) 0%,
-      var(--background) 45%,
-      var(--primary) 75%,
-      var(--primary) 100%
+      var(--primary) 0%,
+      var(--primary) 25%,
+      var(--background) 55%,
+      var(--background) 100%
     );
   }
 }
 
 .on-dark {
-  --foreground: oklch(0.98 0.006 217);
-  --muted-foreground: oklch(0.78 0.02 217);
+  --foreground: oklch(0.9 0.004 240);
+  --muted-foreground: oklch(0.72 0.006 240);
   --border: oklch(1 0 0 / 15%);
   --input: oklch(1 0 0 / 15%);
   --secondary: oklch(1 0 0 / 12%);
-  --secondary-foreground: oklch(0.98 0.006 217);
+  --secondary-foreground: oklch(0.9 0.004 240);
 }

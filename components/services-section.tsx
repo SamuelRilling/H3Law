@@ -13,7 +13,7 @@ const SERVICES = [
 
 export function ServicesSection() {
   return (
-    <section>
+    <section className="on-dark">
       <div className="grid md:grid-cols-[1fr_1.3fr]">
         <div className="flex items-center px-6 py-20 md:px-10 md:py-28">
           <p className="max-w-xs text-balance font-serif text-2xl font-medium leading-snug text-foreground">
@@ -26,7 +26,7 @@ export function ServicesSection() {
             <span className="mb-3 block text-xs font-medium uppercase tracking-[0.3em] text-muted-foreground">
               Lo que hacemos
             </span>
-            <h2 className="font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl">
+            <h2 className="font-serif text-4xl font-medium tracking-tight text-accent sm:text-5xl">
               Nuestros Servicios
             </h2>
           </div>
@@ -45,7 +45,7 @@ export function ServicesSection() {
 
           <Link
             href="/nuestros-servicios"
-            className="inline-flex w-fit items-center justify-center rounded-sm bg-primary px-7 py-3 text-sm font-semibold tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
+            className="inline-flex w-fit items-center justify-center rounded-sm bg-accent px-7 py-3 text-sm font-semibold tracking-wide text-accent-foreground transition-colors hover:bg-accent/90"
           >
             Ver todos los servicios
           </Link>

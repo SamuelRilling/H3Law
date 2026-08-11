@@ -63,7 +63,7 @@ export default function ServiciosPage() {
           description="Asesoría legal integral en derecho de aguas, desde la solicitud de nuevos derechos hasta la defensa ante la Dirección General de Aguas."
         />
 
-        <section className="py-20">
+        <section className="on-dark py-20">
           <div className="mx-auto max-w-4xl px-6 md:px-10">
             {SERVICES.map(({ title, description }, index) => (
               <div
@@ -74,7 +74,7 @@ export default function ServiciosPage() {
                   {String(index + 1).padStart(2, '0')}
                 </span>
                 <div>
-                  <h2 className="font-serif text-xl font-medium tracking-tight text-foreground">
+                  <h2 className="font-serif text-xl font-medium tracking-tight text-accent">
                     {title}
                   </h2>
                   <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-foreground/75">

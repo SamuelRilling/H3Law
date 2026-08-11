@@ -8,12 +8,12 @@ export function PageHeader({
   description?: string
 }) {
   return (
-    <section className="pt-36 pb-20 md:pt-44 md:pb-24">
+    <section className="on-dark pt-36 pb-20 md:pt-44 md:pb-24">
       <div className="mx-auto max-w-3xl px-6 text-center md:px-10">
         <span className="mb-3 inline-block text-xs font-medium uppercase tracking-[0.3em] text-accent">
           {eyebrow}
         </span>
-        <h1 className="font-serif text-4xl font-medium tracking-tight text-foreground sm:text-5xl">
+        <h1 className="font-serif text-4xl font-medium tracking-tight text-accent sm:text-5xl">
           {title}
         </h1>
         {description && (
