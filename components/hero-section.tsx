@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { BASE_PATH } from '@/lib/base-path'
 
 export function HeroSection() {
   return (
     <section className="relative flex min-h-[100vh] items-end overflow-hidden">
       <Image
-        src="/images/hero-valley.jpg"
+        src={`${BASE_PATH}/images/hero-valley.jpg`}
         alt="Vista aérea de un valle verde con un río que serpentea entre montañas, representando los recursos hídricos que H2Law protege"
         fill
         priority

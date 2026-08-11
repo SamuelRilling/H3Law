@@ -40,7 +40,7 @@ export function ContactSection({
   }
 
   return (
-    <section className="bg-background py-24">
+    <section className="on-dark py-24">
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         {showHeading && (
           <div className="mb-14 text-center">
@@ -96,7 +96,7 @@ export function ContactSection({
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn de H2Law"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
               >
                 <LinkedinIcon className="h-4 w-4" />
               </a>
@@ -105,7 +105,7 @@ export function ContactSection({
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook de H2Law"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
               >
                 <FacebookIcon className="h-4 w-4" />
               </a>
@@ -178,13 +178,13 @@ export function ContactSection({
             </div>
             <button
               type="submit"
-              className="mt-2 inline-flex w-fit items-center justify-center rounded-sm bg-primary px-8 py-3 text-sm font-semibold tracking-wide text-primary-foreground transition-colors hover:bg-primary/90"
+              className="mt-2 inline-flex w-fit items-center justify-center rounded-sm bg-accent px-8 py-3 text-sm font-semibold tracking-wide text-accent-foreground transition-colors hover:bg-accent/90"
             >
               Enviar
             </button>
             <div role="status" aria-live="polite">
               {state.status === 'success' && (
-                <p className="text-sm text-primary">{state.message}</p>
+                <p className="text-sm text-accent">{state.message}</p>
               )}
               {state.status === 'error' && state.message && !state.fieldErrors && (
                 <p className="text-sm text-destructive">{state.message}</p>

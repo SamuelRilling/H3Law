@@ -173,12 +173,22 @@
 }
 
 @layer components {
-  .bg-primary-wash {
-    background-color: var(--primary);
-    background-image: radial-gradient(
-      ellipse 140% 100% at 15% 0%,
-      oklch(from var(--primary) calc(l + 0.1) c h) 0%,
-      var(--primary) 55%
+  .bg-page-wash {
+    background-image: linear-gradient(
+      to bottom,
+      var(--background) 0%,
+      var(--background) 45%,
+      var(--primary) 75%,
+      var(--primary) 100%
     );
   }
+}
+
+.on-dark {
+  --foreground: oklch(0.98 0.006 217);
+  --muted-foreground: oklch(0.78 0.02 217);
+  --border: oklch(1 0 0 / 15%);
+  --input: oklch(1 0 0 / 15%);
+  --secondary: oklch(1 0 0 / 12%);
+  --secondary-foreground: oklch(0.98 0.006 217);
 }

@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Public_Sans, Source_Serif_4 } from 'next/font/google'
+import { BASE_PATH } from '@/lib/base-path'
 import './globals.css'
 
 const publicSans = Public_Sans({
@@ -21,8 +22,8 @@ export const metadata: Metadata = {
   description:
     'H2Law es un estudio jurídico especializado en derecho de aguas en Chile: derechos de aprovechamiento, regularizaciones, escrituras y defensa ante la DGA.',
   icons: {
-    icon: '/icon.svg',
-    apple: '/images/h2law-logo.jpg',
+    icon: `${BASE_PATH}/icon.svg`,
+    apple: `${BASE_PATH}/images/h2law-logo.jpg`,
   },
 }
 

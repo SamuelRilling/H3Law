@@ -13,10 +13,10 @@ const SERVICES = [
 
 export function ServicesSection() {
   return (
-    <section className="bg-background">
+    <section>
       <div className="grid md:grid-cols-[1fr_1.3fr]">
-        <div className="flex items-center bg-primary-wash px-6 py-20 md:px-10 md:py-28">
-          <p className="max-w-xs text-balance font-serif text-2xl font-medium leading-snug text-primary-foreground">
+        <div className="flex items-center px-6 py-20 md:px-10 md:py-28">
+          <p className="max-w-xs text-balance font-serif text-2xl font-medium leading-snug text-foreground">
             Más de una década protegiendo el derecho al agua de familias, comunidades agrícolas y
             empresas en el sur de Chile.
           </p>

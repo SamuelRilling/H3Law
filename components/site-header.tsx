@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
+import { BASE_PATH } from '@/lib/base-path'
 import { cn } from '@/lib/utils'
 
 const NAV_LINKS = [
@@ -42,7 +43,7 @@ export function SiteHeader() {
         <Link href="/" className="flex items-center gap-3">
           <span className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-md">
             <Image
-              src="/images/h2law-logo.jpg"
+              src={`${BASE_PATH}/images/h2law-logo.jpg`}
               alt="Logo H2Law"
               width={44}
               height={44}
