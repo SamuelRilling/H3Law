@@ -14,7 +14,7 @@ const sourceSerif = Source_Serif_4({
   subsets: ['latin'],
   variable: '--font-source-serif',
   display: 'swap',
-  weight: ['500', '600', '700'],
+  weight: ['300', '500', '600', '700'],
 })
 
 export const metadata: Metadata = {

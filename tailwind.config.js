@@ -1,0 +1,1 @@
+        serif: ['var(--font-source-serif)', 'serif'],

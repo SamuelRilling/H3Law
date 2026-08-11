@@ -41,24 +41,17 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
         <Link href="/" className="flex items-center gap-3">
-          <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-md">
+          <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-md">
             <Image
               src={`${BASE_PATH}/images/h2law-logo.jpg`}
               alt="Logo H2Law"
-              width={56}
-              height={56}
+              width={64}
+              height={64}
               className="h-full w-full object-contain"
               priority
             />
           </span>
-          <span
-            className={cn(
-              'font-serif text-xl font-medium tracking-tight transition-colors',
-              scrolled ? 'text-foreground' : 'text-white',
-            )}
-          >
-            H2Law
-          </span>
+
         </Link>
 
         <nav className="hidden items-center gap-9 md:flex">

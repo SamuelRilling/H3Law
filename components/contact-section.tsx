@@ -44,9 +44,6 @@ export function ContactSection({
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         {showHeading && (
           <div className="mb-14 text-center">
-            <span className="mb-3 inline-block text-xs font-medium uppercase tracking-[0.3em] text-accent">
-              Hablemos
-            </span>
             <h2 className="font-serif text-4xl font-medium tracking-tight text-accent sm:text-5xl">
               Contáctanos
             </h2>
@@ -59,7 +56,7 @@ export function ContactSection({
               <span className="flex h-11 w-11 flex-none items-center justify-center rounded-full bg-secondary text-foreground">
                 <MapPin className="h-5 w-5" strokeWidth={1.75} />
               </span>
-              <p className="pt-2 text-lg leading-relaxed text-foreground/80">
+              <p className="pt-2 font-serif text-xl leading-relaxed text-white/90">
                 Antonio Varas 687, Oficina 509,
                 <br />
                 Torre Sinergia, Temuco, Chile
@@ -72,7 +69,7 @@ export function ContactSection({
               </span>
               <a
                 href="tel:+56982719372"
-                className="pt-2 text-lg leading-relaxed text-foreground/80 transition-colors hover:text-accent"
+                className="pt-2 font-serif text-xl leading-relaxed text-white/90 transition-colors hover:text-accent"
               >
                 +56 9 8271 9372
               </a>
@@ -84,7 +81,7 @@ export function ContactSection({
               </span>
               <a
                 href="mailto:annerillingminte@gmail.com"
-                className="pt-2 text-lg leading-relaxed text-foreground/80 transition-colors hover:text-accent"
+                className="pt-2 font-serif text-xl leading-relaxed text-white/90 transition-colors hover:text-accent"
               >
                 annerillingminte@gmail.com
               </a>
@@ -114,12 +111,15 @@ export function ContactSection({
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-5" noValidate>
             <div className="flex flex-col gap-2">
-              <Label htmlFor="nombre">Nombre</Label>
+              <Label htmlFor="nombre" className="text-xl font-serif text-white">
+                Nombre
+              </Label>
               <Input
                 id="nombre"
                 name="nombre"
                 placeholder="Tu nombre"
                 autoComplete="given-name"
+                className="h-12 bg-white text-base text-foreground"
                 aria-invalid={Boolean(state.fieldErrors?.nombre)}
                 aria-describedby={state.fieldErrors?.nombre ? 'nombre-error' : undefined}
               />
@@ -141,7 +141,7 @@ export function ContactSection({
               </div>
             )}
             <div className="flex flex-col gap-2">
-              <Label htmlFor="email">
+              <Label htmlFor="email" className="text-xl font-serif text-white">
                 Email <span className="text-accent">*</span>
               </Label>
               <Input
@@ -151,6 +151,7 @@ export function ContactSection({
                 required
                 placeholder="tu@email.com"
                 autoComplete="email"
+                className="h-12 bg-white text-base text-foreground"
                 aria-invalid={Boolean(state.fieldErrors?.email)}
                 aria-describedby={state.fieldErrors?.email ? 'email-error' : undefined}
               />
@@ -161,12 +162,15 @@ export function ContactSection({
               )}
             </div>
             <div className="flex flex-col gap-2">
-              <Label htmlFor="mensaje">Escribe un mensaje</Label>
+              <Label htmlFor="mensaje" className="text-xl font-serif text-white">
+                Escribe un mensaje
+              </Label>
               <Textarea
                 id="mensaje"
                 name="mensaje"
                 rows={5}
                 placeholder="¿En qué podemos ayudarte?"
+                className="bg-white text-base text-foreground"
                 aria-invalid={Boolean(state.fieldErrors?.mensaje)}
                 aria-describedby={state.fieldErrors?.mensaje ? 'mensaje-error' : undefined}
               />
