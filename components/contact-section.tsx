@@ -40,7 +40,7 @@ export function ContactSection({
   }
 
   return (
-    <section className="py-24">
+    <section className="on-dark py-24">
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         {showHeading && (
           <div className="mb-14 text-center">

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export function AboutSection() {
   return (
-    <section className="on-dark py-24">
+    <section className="py-24">
       <div className="mx-auto max-w-3xl px-6 text-center md:px-10">
         <span aria-hidden="true" className="mx-auto mb-6 block h-px w-16 bg-accent" />
         <span className="mb-3 inline-block text-xs font-medium uppercase tracking-[0.3em] text-muted-foreground">

@@ -13,7 +13,7 @@ const SERVICES = [
 
 export function ServicesSection() {
   return (
-    <section className="on-dark">
+    <section>
       <div className="grid md:grid-cols-[1fr_1.3fr]">
         <div className="flex items-center px-6 py-20 md:px-10 md:py-28">
           <p className="max-w-xs text-balance font-serif text-2xl font-medium leading-snug text-foreground">
